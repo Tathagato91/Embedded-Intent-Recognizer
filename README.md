@@ -98,7 +98,7 @@ Output -
 Intent: Get Weather City Time
 ```
 
-## Google test unit test running instruction
+## Google test setup (Linked realtime [googletest repository](https://github.com/google/googletest) maintained by Google)
 
 1. Go to top level directory `Embedded-Intent-Recognizer`
 2. `cd gtest`
