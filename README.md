@@ -97,3 +97,28 @@ Output -
 ```
 Intent: Get Weather City Time
 ```
+
+## Google test unit test running instruction
+
+1. Go to top level directory `Embedded-Intent-Recognizer`
+2. `cd gtest`
+3. `mkdir build`
+4. `cd build`
+5. `cmake -Dgtest_build_samples=ON -DCMAKE_BUILD_TYPE=Debug ..`
+6. `make -j4`
+7. `./unit_tests`
+
+
+###### example output of gtest
+```
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EmbeddedIntentRecognizer
+[ RUN      ] EmbeddedIntentRecognizer.extractIntent
+[       OK ] EmbeddedIntentRecognizer.extractIntent (0 ms)
+[----------] 1 test from EmbeddedIntentRecognizer (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+```
