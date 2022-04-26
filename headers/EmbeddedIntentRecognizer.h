@@ -29,14 +29,15 @@ private:
 	
 	/*data parsing and string utilities*/	
     string ConvertCLAtoString(const int i_count, char** i_array);
-    //bool findCaseInsensitive(string &data, string &toSearch);
-	bool findCaseInsensitive(std::string data, std::string toSearch);
-	
+
+
 	/*intent sub-routines*/
 	void findWeatherIntent(string i_sentence);
 	void findFactIntent(string i_sentence);
 	void findPlaceIntent(string i_sentence);
 	void findTimeIntent(string i_sentence);
 	void findMomentIntent(string i_sentence);
+public:
+	bool findCaseInsensitive(string data, string toSearch);
 };
 #endif

@@ -14,7 +14,7 @@ include_directories(googletest/include)
 
 # add the library for test
 add_library(example_google_unit_test
-    EmbeddedIntentRecognizer.C
+    ../sources/EmbeddedIntentRecognizer.C
 )
 
 # include directories to use when compiling a given target

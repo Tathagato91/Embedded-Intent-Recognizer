@@ -65,7 +65,8 @@
         "__functional_03": "cpp",
         "deque": "cpp",
         "filesystem": "cpp",
-        "regex": "cpp"
+        "regex": "cpp",
+        "Unittests.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
