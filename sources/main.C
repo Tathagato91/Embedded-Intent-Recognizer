@@ -1,12 +1,18 @@
 #include <iostream>
-#include "EmbeddedIntentRecognizer.h"
+#include "../headers/EmbeddedIntentRecognizer.h"
 
-int main(int argc, char** argv[])
+using namespace std;
+
+int main(int argc, char** argv)
 {
     if(argc > 1)
     {
        EmbeddedIntentRecognizer eir;
-       std::cout << eir.extractIntent(argc-1, &argv[1]) << std::endl;
-	   
+       cout << eir.extractIntent(argc, &argv[0]) << endl;
     }
+    else if(argc == 1)
+    {
+        cout << "ERROR: Expected at least 1 argument" << endl;
+    }
+    return 0;
 }
